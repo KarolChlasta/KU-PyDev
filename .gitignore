@@ -1,0 +1,64 @@
+# ============================================
+# Podstawy programowania w Pythonie – .gitignore
+# ============================================
+
+# --- Foldery kursowe ---
+00_Materiały/
+00_Materiały/*
+
+# --- Skrypty pomocnicze ---
+setup.sh
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+*.pickle
+*.db
+*.sqlite3
+
+# --- Virtual environments ---
+venv/
+env/
+.venv/
+.python-version
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*.ipynb
+
+# --- Logi i cache ---
+*.log
+*.tmp
+*.cache
+.cache/
+*.swp
+
+# --- Edytory ---
+# VS Code
+.vscode/
+# PyCharm / JetBrains
+.idea/
+*.iml
+
+# --- Systemowe ---
+.DS_Store
+Thumbs.db
+
+# --- Pliki użytkownika ---
+*.bak
+*.old
+
+# --- Archiwa ---
+*.zip
+*.tar
+*.gz
+*.rar
+
+# --- Pliki konfiguracyjne narzędzi AI (jeśli powstaną) ---
+windsurf/
+replit/
+copilot/
