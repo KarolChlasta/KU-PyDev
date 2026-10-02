@@ -1,1 +1,3 @@
-themeSet: ./slajdy/motyw-alk.css
+themeSet:
+  - ./slajdy/motyw-warsawiq.css
+  - ./slajdy/motyw-alk.css

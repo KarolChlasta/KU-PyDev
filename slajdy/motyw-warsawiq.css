@@ -1,0 +1,112 @@
+/* @theme warsawiq */
+/* Konwencja WarsawIQ (warsawiq.com): granat #143a72 na bieli, złoto jako akcent,
+   Barlow (grotesk z rodziny DIN) i IBM Plex Mono. */
+@import 'default';
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap');
+
+:root {
+  --ink: #0d1420;
+  --ink-soft: #2b3648;
+  --muted: #59647a;
+  --hair: #e1e7ef;
+  --panel: #f3f6fa;
+  --navy: #143a72;
+  --navy-light: #86abe9;
+  --gold: #9c7222;
+  --gold-light: #d3a24a;
+  --accent-weak: #e8eef8;
+  --sans: "Barlow", "Segoe UI", Roboto, Arial, sans-serif;
+  --mono: "IBM Plex Mono", Menlo, Consolas, monospace;
+}
+
+section {
+  background: #ffffff;
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 27px;
+  line-height: 1.45;
+  padding: 64px 72px 56px;
+}
+
+/* Cienka złota linia u góry – motyw „flagline” ze strony */
+section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, var(--navy) 0 70%, var(--gold) 70% 100%);
+}
+
+section h1 {
+  color: var(--navy);
+  font-weight: 700;
+  font-size: 46px;
+  letter-spacing: -0.01em;
+  margin-bottom: 18px;
+}
+section h2 { color: var(--gold); font-weight: 600; font-size: 30px; }
+section h3 { color: var(--navy); font-weight: 600; font-size: 28px; margin: 12px 0 4px; }
+section strong { color: var(--navy); font-weight: 700; }
+section em { color: var(--ink-soft); }
+section a { color: var(--navy); }
+
+section code {
+  font-family: var(--mono);
+  background: var(--accent-weak);
+  color: var(--navy);
+  border-radius: 3px;
+  padding: 0 4px;
+}
+section pre {
+  background: var(--panel);
+  border-left: 5px solid var(--navy);
+  border-radius: 0 4px 4px 0;
+  font-size: 22px;
+}
+section pre code { background: transparent; color: var(--ink); padding: 0; }
+
+/* Definicja / twierdzenie: cytat blokowy jako ramka */
+section blockquote {
+  border-left: 5px solid var(--gold);
+  background: #fbf7ef;
+  color: var(--ink);
+  padding: 10px 20px;
+  margin: 14px 0;
+  font-style: normal;
+}
+section blockquote strong { color: var(--gold); }
+
+section table { font-size: 22px; border-collapse: collapse; }
+section th { background: var(--navy); color: #ffffff; font-weight: 600; }
+section td, section th { border: 1px solid var(--hair); padding: 6px 12px; }
+section tr:nth-child(even) td { background: var(--panel); }
+
+section footer { color: var(--muted); font-size: 15px; left: 72px; }
+section::after { color: var(--muted); font-size: 15px; font-family: var(--mono); }
+
+/* Źródła i przypisy na dole slajdu */
+section .zrodlo, section p.zrodlo { color: var(--muted); font-size: 17px; }
+
+/* Slajd tytułowy */
+section.tytul {
+  background: var(--navy);
+  color: #ffffff;
+  justify-content: center;
+}
+section.tytul::before { background: var(--gold); }
+section.tytul h1 { color: #ffffff; font-size: 76px; margin-bottom: 4px; }
+section.tytul h2 { color: var(--gold-light); font-size: 36px; }
+section.tytul p { color: #c2cbdb; }
+section.tytul strong { color: #ffffff; }
+section.tytul footer, section.tytul::after { color: var(--navy-light); }
+
+/* Przekładka między częściami zajęć */
+section.sekcja {
+  background: var(--ink);
+  color: #e6eaf1;
+  justify-content: center;
+}
+section.sekcja h1 { color: #ffffff; font-size: 60px; }
+section.sekcja h2 { color: var(--gold-light); }
+section.sekcja p { color: #c2cbdb; }
+section.sekcja footer, section.sekcja::after { color: #8593a8; }
