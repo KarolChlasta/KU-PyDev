@@ -105,5 +105,6 @@ git commit -m "Lab 01"
 git push
 ```
 
-- ★ oddane do **11:45** → punkt aktywności
+- Punkt aktywności: **obecność + wszystkie testy ★ zielone + push na GitHub przed 11:45**
+- Liczy się czas na GitHubie, nie data commita. Po zajęciach – **0 pkt**, bez wyjątków
 - Zaliczenie: **Kolokwium I (50) + Kolokwium II (50) + bonus do 20** (obecność + aktywność)

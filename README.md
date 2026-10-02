@@ -67,7 +67,7 @@ Testy uruchamiasz w folderze labu: `python -m unittest discover -s tests -v`.
 | **Razem** | maks. 120 |
 
 - **Obecność:** 15 spotkań, 2 nieobecności bez utraty punktów, każda kolejna −1 pkt (minimum 0).
-- **Aktywność:** za każdy z 13 labów (bez kolokwiów), w którym zadania ★ zostaną oddane commitem do końca zajęć, dostajesz 10/13 pkt.
+- **Aktywność:** 13 labów (bez kolokwiów) × 10/13 pkt – zasady poniżej.
 - **Ocena** liczona od 100 pkt (bonus pomaga osiągnąć próg):
 
 | Punkty | Ocena |
@@ -81,6 +81,22 @@ Testy uruchamiasz w folderze labu: `python -m unittest discover -s tests -v`.
 
 - **Termin drugi:** jedno kolokwium za 100 pkt (pisanie programów i algorytmów na żywo). Zdobyty bonus jest doliczany.
 - Wykład zaliczany jest osobno, zgodnie z zasadami prowadzącej wykład.
+
+### Punkty za aktywność – tylko za pracę na zajęciach
+
+Punkt za lab dostajesz **wyłącznie**, gdy spełnisz wszystkie trzy warunki:
+
+1. **jesteś obecny** na tych zajęciach,
+2. **wszystkie testy obowiązkowe (★)** przechodzą,
+3. Twój `git push` **dotarł na GitHub przed końcem zajęć** (godzina końca jest w harmonogramie).
+
+- Liczy się **czas pushu na GitHubie** – godzina uruchomienia testów w zakładce **Actions** Twojego forka.
+  **Data commita się nie liczy**, bo można ją zmienić na własnym komputerze.
+- Praca wysłana **po zajęciach – nawet minutę później – nie dostaje punktu.** Nie ma późniejszego oddawania,
+  dosyłania poprawek ani zaliczania labu zdalnie.
+- **Nieobecność = 0 pkt aktywności** za ten lab. Zadania możesz zrobić w domu dla siebie (i warto), ale punktów za nie nie ma.
+- Dlatego na Lab 01 włączasz GitHub Actions w forku – bez tego nie da się potwierdzić czasu oddania.
+- Jedyny wyjątek: awaria po stronie uczelni lub GitHuba, zgłoszona prowadzącemu **w trakcie zajęć**.
 
 ## Zasady korzystania z AI
 

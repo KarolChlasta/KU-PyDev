@@ -48,6 +48,8 @@ python -m unittest discover -s tests -v
 
 Do **11:45**: `git add lab02_zmienne_typy`, `git commit -m "Lab 02"`, `git push`.
 
+> ⏰ **Punkt za aktywność tylko za push przed 11:45** – liczy się godzina na GitHubie (zakładka Actions), nie data commita. Po zajęciach, nawet minutę później, punktu już nie ma. Nieobecność = brak punktu. Wymagane: wszystkie testy ★ zielone. [Zasady](../README.md#punkty-za-aktywność--tylko-za-pracę-na-zajęciach)
+
 ## Do poczytania
 
 - E. Matthes, *Python. Instrukcje dla programisty* – rozdz. 2

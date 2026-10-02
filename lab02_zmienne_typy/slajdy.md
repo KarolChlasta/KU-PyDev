@@ -92,5 +92,6 @@ git commit -m "Lab 02"
 git push
 ```
 
-- ★ oddane do **11:45** → punkt aktywności
+- Punkt aktywności: **obecność + wszystkie testy ★ zielone + push na GitHub przed 11:45**
+- Po zajęciach – **0 pkt**, bez wyjątków
 - Pamiętaj: **Sync fork** na początku zajęć, żeby pobrać nowy lab
