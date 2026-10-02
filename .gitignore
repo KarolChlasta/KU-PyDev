@@ -37,9 +37,14 @@ env/
 .cache/
 *.swp
 
+# --- Pokrycie testami (lab 14) ---
+.coverage
+htmlcov/
+
 # --- Edytory ---
-# VS Code
-.vscode/
+# VS Code (ustawienia projektu – motyw slajdów – są w repo)
+.vscode/*
+!.vscode/settings.json
 # PyCharm / JetBrains
 .idea/
 *.iml
@@ -57,8 +62,3 @@ Thumbs.db
 *.tar
 *.gz
 *.rar
-
-# --- Pliki konfiguracyjne narzędzi AI (jeśli powstaną) ---
-windsurf/
-replit/
-copilot/

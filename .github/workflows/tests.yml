@@ -1,0 +1,26 @@
+name: Testy
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  testy:
+    # W repozytorium prowadzącego są tylko startery – testy uruchamiamy w forkach studentów.
+    if: github.repository != 'KarolChlasta/KU-PyDev'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        lab:
+          - lab01_podstawy
+          - lab02_zmienne_typy
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Testy obowiązkowe – ${{ matrix.lab }}
+        working-directory: ${{ matrix.lab }}
+        run: python -m unittest discover -s tests -p "test_obowiazkowe.py" -v

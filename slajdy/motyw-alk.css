@@ -1,0 +1,39 @@
+/* @theme alk */
+@import 'default';
+
+:root {
+  --alk-navy: #0b1035;
+  --alk-coral: #ff5f57;
+  --alk-light: #eef0f8;
+  --alk-muted: #6b6f8a;
+}
+
+section {
+  background: #ffffff;
+  color: var(--alk-navy);
+  font-family: "Open Sans", "Segoe UI", Arial, sans-serif;
+  font-size: 28px;
+  padding: 56px 70px;
+}
+
+section h1 {
+  color: var(--alk-navy);
+  border-bottom: 4px solid var(--alk-coral);
+  padding-bottom: 8px;
+}
+
+section h2 { color: var(--alk-coral); }
+section strong { color: var(--alk-coral); }
+section code { background: var(--alk-light); color: var(--alk-navy); }
+section pre { background: var(--alk-light); border-left: 6px solid var(--alk-coral); }
+section table { font-size: 22px; }
+section footer, section::after { color: var(--alk-muted); font-size: 16px; }
+
+section.tytul {
+  background: var(--alk-navy);
+  color: #ffffff;
+  justify-content: center;
+}
+section.tytul h1 { color: #ffffff; border: none; font-size: 72px; }
+section.tytul h2 { color: var(--alk-coral); }
+section.tytul footer, section.tytul::after { color: #b8bbd0; }
