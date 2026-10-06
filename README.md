@@ -3,9 +3,8 @@
 Materiały do **laboratorium** z przedmiotu *Podstawy programowania w języku Python I*
 (Informatyka, I stopień, rok 1, semestr zimowy 2026/2027, Akademia Leona Koźmińskiego).
 
-- **Prowadzący laboratorium (grupa lab02/INF – I):** dr Karol Chlasta
-- **Wykład:** E. Kot
-- **Platforma e-learningowa:** [CyberSkiller](https://alk.cyberskiller.com) · informacje organizacyjne: Blackboard
+- **Prowadzący (grupa lab02/INF – I):** dr n. inż.-tech. Karol Chlasta
+- **Platforma e-learningowa:** [CyberSkiller](https://alk.cyberskiller.com) i [DataCamp](https://app.datacamp.com/certification/get-started/python-developer-associate/overview) · informacje organizacyjne: Teams
 
 Zajęcia to praktyczne wprowadzenie do Pythona: podstawy programowania, struktury danych,
 algorytmy oraz dobre praktyki i standardy pisania kodu.
