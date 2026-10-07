@@ -16,6 +16,17 @@ jobs:
         lab:
           - lab01_podstawy
           - lab02_zmienne_typy
+          - lab03_warunki
+          - lab04_petle
+          - lab05_listy_krotki
+          - lab06_slowniki_zbiory
+          - lab07_funkcje
+          - lab09_pliki
+          - lab10_moduly_pakiety
+          - lab11_daty_math
+          - lab12_wyjatki
+          - lab13_sortowanie
+          - lab14_testy_tdd
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7

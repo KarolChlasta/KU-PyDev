@@ -21,22 +21,22 @@ algorytmy oraz dobre praktyki i standardy pisania kodu.
 |---|---|---|
 | [01](lab01_podstawy/) | wt 06.10.2026 | Podstawy Pythona, Hello World, BMI |
 | [02](lab02_zmienne_typy/) | wt 13.10.2026 | Zmienne, typy danych, operacje arytmetyczne |
-| 03 | wt 20.10.2026 | Instrukcje warunkowe |
-| 04 | wt 27.10.2026 | Pętle |
-| 05 | wt 03.11.2026 | Listy i krotki |
-| 06 | wt 24.11.2026 | Słowniki i zbiory |
-| 07 | wt 01.12.2026 | Funkcje 🤖 |
-| 08 | **śr 02.12.2026, 14:00–17:15, A/136** | **Kolokwium I** |
-| 09 | wt 08.12.2026 | Praca z plikami |
-| 10 | wt 15.12.2026 | Moduły i pakiety |
-| 11 | wt 22.12.2026 | Biblioteka standardowa: daty, czas, math |
-| 12 | **pt 08.01.2027, 14:00–17:15, A/124** | Obsługa wyjątków |
-| 13 | wt 12.01.2027 | Sortowanie, wyszukiwanie, notacja Big O 🤖 |
-| 14 | wt 19.01.2027, **A/111** | Testy jednostkowe i TDD 🤖 |
-| 15 | wt 26.01.2027, **A/111** | **Kolokwium II** |
+| [03](lab03_warunki/) | wt 20.10.2026 | Instrukcje warunkowe |
+| [04](lab04_petle/) | wt 27.10.2026 | Pętle |
+| [05](lab05_listy_krotki/) | wt 03.11.2026 | Listy i krotki |
+| [06](lab06_slowniki_zbiory/) | wt 24.11.2026 | Słowniki i zbiory |
+| [07](lab07_funkcje/) | wt 01.12.2026 | Funkcje 🤖 |
+| [08](lab08_kolokwium1/) | **śr 02.12.2026, 14:00–17:15, A/136** | **Kolokwium I** |
+| [09](lab09_pliki/) | wt 08.12.2026 | Praca z plikami |
+| [10](lab10_moduly_pakiety/) | wt 15.12.2026 | Moduły i pakiety |
+| [11](lab11_daty_math/) | wt 22.12.2026 | Biblioteka standardowa: daty, czas, math |
+| [12](lab12_wyjatki/) | **pt 08.01.2027, 14:00–17:15, A/124** | Obsługa wyjątków |
+| [13](lab13_sortowanie/) | wt 12.01.2027 | Sortowanie, wyszukiwanie, notacja Big O 🤖 |
+| [14](lab14_testy_tdd/) | wt 19.01.2027, **A/111** | Testy jednostkowe i TDD 🤖 |
+| [15](lab15_kolokwium2/) | wt 26.01.2027, **A/111** | **Kolokwium II** |
 
 Jeśli nie zaznaczono inaczej: wtorek 08:30–11:45, sala A/121. 🤖 – zajęcia z blokiem pracy z AI.
-Kolejne laby pojawiają się w repozytorium przed zajęciami.
+Materiały do każdych zajęć: folder labu (README z zadaniami, `slajdy.md` / `slajdy.pdf`, pliki zadań, testy).
 
 ## Struktura labu
 

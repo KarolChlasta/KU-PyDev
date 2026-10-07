@@ -24,15 +24,15 @@ def numbers(text):
 
 
 class ScriptTestCase(unittest.TestCase):
-    def run_script(self, script, stdin=""):
+    def run_script(self, script, stdin="", env=None):
         path = LAB_DIR / script
         self.assertTrue(path.exists(), f"Brak pliku {script}")
-        env = {**os.environ, "PYTHONIOENCODING": "utf-8"}
+        env = {**os.environ, "PYTHONIOENCODING": "utf-8", **(env or {})}
         try:
             result = subprocess.run(
                 [sys.executable, str(path)],
                 input=stdin, capture_output=True, text=True,
-                encoding="utf-8", timeout=10, env=env,
+                encoding="utf-8", timeout=10, env=env, cwd=LAB_DIR,
             )
         except subprocess.TimeoutExpired:
             self.fail(f"{script} działa dłużej niż 10 s – czeka na dodatkowe dane albo ma nieskończoną pętlę?")

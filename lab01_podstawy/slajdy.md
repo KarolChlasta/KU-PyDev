@@ -2,17 +2,19 @@
 marp: true
 theme: warsawiq
 paginate: true
-footer: "dr inż. Karol Chlasta · WarsawIQ · Podstawy programowania w języku Python I · Lab 01 · 06.10.2026"
+header: "Podstawy programowania w języku Python I · Lab 01"
+footer: "dr inż. Karol Chlasta · WarsawIQ · Akademia Leona Koźmińskiego · 06.10.2026"
 ---
 
 <!-- _class: tytul -->
 
+<p class="eyebrow">Akademia Leona Koźmińskiego · Informatyka, I rok · 06.10.2026</p>
+
 # Lab 01
 ## Podstawy Pythona: Hello, World! i BMI
 **dr inż. Karol Chlasta** · WarsawIQ
-Akademia Leona Koźmińskiego · Informatyka, I rok
 
-📦 [github.com/KarolChlasta/KU-PyDev](https://github.com/KarolChlasta/KU-PyDev)
+Repozytorium kursu: [github.com/KarolChlasta/KU-PyDev](https://github.com/KarolChlasta/KU-PyDev)
 
 ---
 
