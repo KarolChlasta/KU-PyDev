@@ -1,6 +1,6 @@
 # Lab 04 – Pętle
 
-📅 wtorek 27.10.2026, 08:30–11:45 · 📍 sala A/121 · ⏱ 4 h
+📅 wtorek 03.11.2026, 08:30–11:45 · 📍 sala A/121 · ⏱ 4 h
 **Sylabus:** treść nr 8 · **Efekty:** U1, U3, KS1 · **Slajdy:** [slajdy.md](slajdy.md)
 
 ## Cel zajęć

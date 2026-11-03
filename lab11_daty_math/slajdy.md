@@ -3,12 +3,12 @@ marp: true
 theme: warsawiq
 paginate: true
 header: "Podstawy programowania w języku Python I · Lab 11"
-footer: "dr inż. Karol Chlasta · WarsawIQ · Akademia Leona Koźmińskiego · 22.12.2026"
+footer: "dr inż. Karol Chlasta · WarsawIQ · Akademia Leona Koźmińskiego · 16.12.2026"
 ---
 
 <!-- _class: tytul -->
 
-<p class="eyebrow">Akademia Leona Koźmińskiego · Informatyka, I rok · 22.12.2026</p>
+<p class="eyebrow">Akademia Leona Koźmińskiego · Informatyka, I rok · 16.12.2026</p>
 
 # Lab 11
 ## Biblioteka standardowa: daty, czas, matematyka
@@ -203,7 +203,8 @@ git commit -m "Lab 11"
 git push
 ```
 
-- Punkt aktywności: **obecność + wszystkie testy ★ zielone + push na GitHub przed 11:45**
+- Dziś wyjątkowo **środa 14:00–17:15**
+- Punkt aktywności: **obecność + wszystkie testy ★ zielone + push na GitHub przed 17:15**
 - Windows: `python -m pip install tzdata`, jeśli `ZoneInfoNotFoundError`
 
 ---
@@ -214,4 +215,4 @@ git push
 - *Falsehoods programmers believe about time* – lista błędnych założeń programistów o czasie
 - PEP 615 – *Support for the IANA Time Zone Database in the Standard Library*
 
-**Następne zajęcia: piątek 08.01.2027, 14:00–17:15, sala A/124** – obsługa wyjątków. Wesołych Świąt! 🎄
+**Następny lab (22.12):** obsługa wyjątków

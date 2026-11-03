@@ -3,12 +3,12 @@ marp: true
 theme: warsawiq
 paginate: true
 header: "Podstawy programowania w języku Python I · Lab 07"
-footer: "dr inż. Karol Chlasta · WarsawIQ · Akademia Leona Koźmińskiego · 01.12.2026"
+footer: "dr inż. Karol Chlasta · WarsawIQ · Akademia Leona Koźmińskiego · 02.12.2026"
 ---
 
 <!-- _class: tytul -->
 
-<p class="eyebrow">Akademia Leona Koźmińskiego · Informatyka, I rok · 01.12.2026</p>
+<p class="eyebrow">Akademia Leona Koźmińskiego · Informatyka, I rok · 02.12.2026</p>
 
 # Lab 07
 ## Funkcje 🤖
@@ -248,8 +248,9 @@ git commit -m "Lab 07"
 git push
 ```
 
-- Punkt aktywności: **obecność + wszystkie testy ★ zielone + push na GitHub przed 11:45**
-- 📝 **Kolokwium I: jutro, środa 02.12, 14:00–17:15, sala A/136** – zakres: laby 01–07
+- Dziś wyjątkowo **środa 14:00–17:15, sala A/136**
+- Punkt aktywności: **obecność + wszystkie testy ★ zielone + push na GitHub przed 17:15**
+- 📝 **Kolokwium I: piątek 08.01.2027, 14:00–17:15, sala A/124** – zakres: laby 01–07
 
 ---
 
@@ -260,4 +261,4 @@ git push
 - PEP 257 – *Docstring Conventions*
 - Dokumentacja: *Defining Functions* (*docs.python.org/3/tutorial/controlflow.html*)
 
-**Następne zajęcia (02.12):** 📝 Kolokwium I
+**Następny lab (08.12):** praca z plikami

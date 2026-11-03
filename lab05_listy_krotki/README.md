@@ -1,6 +1,6 @@
 # Lab 05 – Struktury danych I: listy i krotki
 
-📅 wtorek 03.11.2026, 08:30–11:45 · 📍 sala A/121 · ⏱ 4 h
+📅 wtorek 24.11.2026, 08:30–11:45 · 📍 sala A/121 · ⏱ 4 h
 **Sylabus:** treść nr 10 · **Efekty:** U1, U3, KS1 · **Slajdy:** [slajdy.md](slajdy.md)
 
 ## Cel zajęć

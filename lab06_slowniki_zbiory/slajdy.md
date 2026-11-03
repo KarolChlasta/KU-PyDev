@@ -3,12 +3,12 @@ marp: true
 theme: warsawiq
 paginate: true
 header: "Podstawy programowania w języku Python I · Lab 06"
-footer: "dr inż. Karol Chlasta · WarsawIQ · Akademia Leona Koźmińskiego · 24.11.2026"
+footer: "dr inż. Karol Chlasta · WarsawIQ · Akademia Leona Koźmińskiego · 01.12.2026"
 ---
 
 <!-- _class: tytul -->
 
-<p class="eyebrow">Akademia Leona Koźmińskiego · Informatyka, I rok · 24.11.2026</p>
+<p class="eyebrow">Akademia Leona Koźmińskiego · Informatyka, I rok · 01.12.2026</p>
 
 # Lab 06
 ## Struktury danych II: słowniki i zbiory
@@ -196,7 +196,7 @@ git push
 ```
 
 - Punkt aktywności: **obecność + wszystkie testy ★ zielone + push na GitHub przed 11:45**
-- 📝 **Kolokwium I: środa 02.12, 14:00–17:15, A/136** – zakres: laby 01–07
+- 📝 **Kolokwium I: piątek 08.01.2027, 14:00–17:15, sala A/124** – zakres: laby 01–07
 
 ---
 
@@ -207,4 +207,4 @@ git push
 - L. Ramalho, *Zaawansowany Python*, Promise 2020 – rozdz. 3 (słowniki i zbiory)
 - S. Singh, *Księga szyfrów* – historia kryptografii od Cezara do Enigmy
 
-**Następny lab (01.12):** funkcje + blok pracy z AI 🤖
+**Następne zajęcia (środa 02.12, 14:00–17:15, sala A/136):** funkcje + blok pracy z AI 🤖

@@ -3,12 +3,12 @@ marp: true
 theme: warsawiq
 paginate: true
 header: "Podstawy programowania w języku Python I · Lab 12"
-footer: "dr inż. Karol Chlasta · WarsawIQ · Akademia Leona Koźmińskiego · 08.01.2027"
+footer: "dr inż. Karol Chlasta · WarsawIQ · Akademia Leona Koźmińskiego · 22.12.2026"
 ---
 
 <!-- _class: tytul -->
 
-<p class="eyebrow">Akademia Leona Koźmińskiego · Informatyka, I rok · 08.01.2027</p>
+<p class="eyebrow">Akademia Leona Koźmińskiego · Informatyka, I rok · 22.12.2026</p>
 
 # Lab 12
 ## Obsługa wyjątków
@@ -232,8 +232,7 @@ git commit -m "Lab 12"
 git push
 ```
 
-- Dziś wyjątkowo **piątek 14:00–17:15, sala A/124**
-- Punkt aktywności: **obecność + wszystkie testy ★ zielone + push na GitHub przed 17:15**
+- Punkt aktywności: **obecność + wszystkie testy ★ zielone + push na GitHub przed 11:45**
 
 ---
 
@@ -243,4 +242,4 @@ git push
 - Dokumentacja: *Errors and Exceptions*, *Built-in Exceptions* (hierarchia)
 - Słownik Pythona: hasła *EAFP* i *LBYL* (*docs.python.org/3/glossary.html*)
 
-**Następny lab (12.01):** sortowanie, wyszukiwanie, notacja Big O + blok AI 🤖
+**Następne zajęcia: piątek 08.01.2027, 14:00–17:15, sala A/124** – 📝 Kolokwium I. Wesołych Świąt! 🎄

@@ -1,6 +1,6 @@
 # Lab 06 – Struktury danych II: słowniki i zbiory
 
-📅 wtorek 24.11.2026, 08:30–11:45 · 📍 sala A/121 · ⏱ 4 h
+📅 wtorek 01.12.2026, 08:30–11:45 · 📍 sala A/121 · ⏱ 4 h
 **Sylabus:** treść nr 12 · **Efekty:** U1, U3, KS1 · **Slajdy:** [slajdy.md](slajdy.md)
 
 ## Cel zajęć

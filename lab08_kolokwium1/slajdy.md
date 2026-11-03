@@ -3,12 +3,12 @@ marp: true
 theme: warsawiq
 paginate: true
 header: "Podstawy programowania w języku Python I · Kolokwium I"
-footer: "dr inż. Karol Chlasta · WarsawIQ · Akademia Leona Koźmińskiego · 02.12.2026"
+footer: "dr inż. Karol Chlasta · WarsawIQ · Akademia Leona Koźmińskiego · 08.01.2027"
 ---
 
 <!-- _class: tytul -->
 
-<p class="eyebrow">Akademia Leona Koźmińskiego · Informatyka, I rok · 02.12.2026</p>
+<p class="eyebrow">Akademia Leona Koźmińskiego · Informatyka, I rok · 08.01.2027</p>
 
 # Kolokwium I
 ## Laby 01–07 · 50 pkt · 120 minut
@@ -62,4 +62,4 @@ python -m unittest discover -s tests -v
 
 # Powodzenia! 🍀
 
-**Następny lab (08.12):** praca z plikami
+**Następny lab (12.01):** sortowanie, wyszukiwanie, notacja Big O + blok AI 🤖

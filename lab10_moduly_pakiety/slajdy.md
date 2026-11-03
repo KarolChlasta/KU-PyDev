@@ -228,4 +228,4 @@ git push
 - Dokumentacja: *Modules*, *Virtual Environments and Packages*
 - *Python Packaging User Guide* (*packaging.python.org*)
 
-**Następny lab (22.12):** daty, czas i matematyka
+**Następne zajęcia (środa 16.12, 14:00–17:15):** daty, czas i matematyka

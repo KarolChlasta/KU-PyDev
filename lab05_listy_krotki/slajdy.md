@@ -3,12 +3,12 @@ marp: true
 theme: warsawiq
 paginate: true
 header: "Podstawy programowania w języku Python I · Lab 05"
-footer: "dr inż. Karol Chlasta · WarsawIQ · Akademia Leona Koźmińskiego · 03.11.2026"
+footer: "dr inż. Karol Chlasta · WarsawIQ · Akademia Leona Koźmińskiego · 24.11.2026"
 ---
 
 <!-- _class: tytul -->
 
-<p class="eyebrow">Akademia Leona Koźmińskiego · Informatyka, I rok · 03.11.2026</p>
+<p class="eyebrow">Akademia Leona Koźmińskiego · Informatyka, I rok · 24.11.2026</p>
 
 # Lab 05
 ## Struktury danych I: listy i krotki
@@ -229,4 +229,4 @@ git push
 - L. Ramalho, *Zaawansowany Python*, Promise 2020 – rozdz. 2 (sekwencje)
 - Python Wiki: *TimeComplexity* (*wiki.python.org/moin/TimeComplexity*)
 
-**Następny lab (24.11):** słowniki i zbiory
+**Następny lab (01.12):** słowniki i zbiory

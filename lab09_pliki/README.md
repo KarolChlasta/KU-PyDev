@@ -1,6 +1,6 @@
 # Lab 09 – Praca z plikami
 
-📅 **środa 02.12.2026, 14:00–17:15** · 📍 **sala A/136** · ⏱ 4 h
+📅 wtorek 08.12.2026, 08:30–11:45 · 📍 sala A/121 · ⏱ 4 h
 **Sylabus:** treść nr 18 · **Efekty:** U1, U2, KS1 · **Slajdy:** [slajdy.md](slajdy.md)
 
 ## Cel zajęć
@@ -44,9 +44,9 @@ python zad3_edytor.py        # edytor w terminalu
 
 ## Oddanie
 
-Do **17:15**: `git add lab09_pliki`, `git commit -m "Lab 09"`, `git push`.
+Do **11:45**: `git add lab09_pliki`, `git commit -m "Lab 09"`, `git push`.
 
-> ⏰ **Punkt za aktywność tylko za push przed 17:15** – liczy się godzina na GitHubie (zakładka Actions), nie data commita. Po zajęciach, nawet minutę później, punktu już nie ma. Nieobecność = brak punktu. Wymagane: wszystkie testy ★ zielone. [Zasady](../README.md#punkty-za-aktywność--tylko-za-pracę-na-zajęciach)
+> ⏰ **Punkt za aktywność tylko za push przed 11:45** – liczy się godzina na GitHubie (zakładka Actions), nie data commita. Po zajęciach, nawet minutę później, punktu już nie ma. Nieobecność = brak punktu. Wymagane: wszystkie testy ★ zielone. [Zasady](../README.md#punkty-za-aktywność--tylko-za-pracę-na-zajęciach)
 
 ## Do poczytania
 

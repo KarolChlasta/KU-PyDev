@@ -1,6 +1,6 @@
 # Lab 10 – Moduły i pakiety
 
-📅 wtorek 08.12.2026, 08:30–11:45 · 📍 sala A/121 · ⏱ 4 h
+📅 wtorek 15.12.2026, 08:30–11:45 · 📍 sala A/121 · ⏱ 4 h
 **Sylabus:** treść nr 20 · **Efekty:** U1, U2, KS1 · **Slajdy:** [slajdy.md](slajdy.md)
 
 ## Cel zajęć
