@@ -257,7 +257,7 @@ print(df.groupby("miasto")["temp"].mean())
 
 ![bg right:42% fit](img/biblioteki/02_matplotlib.png)
 
-- Wykres z pętli `while` – problem Collatza z poprzedniego slajdu · [matplotlib.org](https://matplotlib.org)
+- Wykres z pętli `while` – problem Collatza z dzisiejszych ciekawostek · [matplotlib.org](https://matplotlib.org)
 
 ```python
 import matplotlib.pyplot as plt
