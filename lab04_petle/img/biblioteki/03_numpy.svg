@@ -19,44 +19,44 @@
         font-weight: 700;
     }
 
-    .terminal-1684946121-matrix {
+    .terminal-1673018565-matrix {
         font-family: Fira Code, monospace;
         font-size: 20px;
         line-height: 24.4px;
         font-variant-east-asian: full-width;
     }
 
-    .terminal-1684946121-title {
+    .terminal-1673018565-title {
         font-size: 18px;
         font-weight: bold;
         font-family: arial;
     }
 
-    .terminal-1684946121-r1 { fill: #98a84b;font-weight: bold }
-.terminal-1684946121-r2 { fill: #c5c8c6 }
+    .terminal-1673018565-r1 { fill: #98a84b;font-weight: bold }
+.terminal-1673018565-r2 { fill: #c5c8c6 }
     </style>
 
     <defs>
-    <clipPath id="terminal-1684946121-clip-terminal">
+    <clipPath id="terminal-1673018565-clip-terminal">
       <rect x="0" y="0" width="609.0" height="47.8" />
     </clipPath>
-    <clipPath id="terminal-1684946121-line-0">
+    <clipPath id="terminal-1673018565-line-0">
     <rect x="0" y="1.5" width="610" height="24.65"/>
             </clipPath>
     </defs>
 
-    <rect fill="#292929" stroke="rgba(255,255,255,0.35)" stroke-width="1" x="1" y="1" width="626" height="96.8" rx="8"/><text class="terminal-1684946121-title" fill="#c5c8c6" text-anchor="middle" x="313" y="27">NumPy&#160;–&#160;wynik</text>
+    <rect fill="#292929" stroke="rgba(255,255,255,0.35)" stroke-width="1" x="1" y="1" width="626" height="96.8" rx="8"/><text class="terminal-1673018565-title" fill="#c5c8c6" text-anchor="middle" x="313" y="27">NumPy&#160;–&#160;wynik</text>
             <g transform="translate(26,22)">
             <circle cx="0" cy="0" r="7" fill="#ff5f57"/>
             <circle cx="22" cy="0" r="7" fill="#febc2e"/>
             <circle cx="44" cy="0" r="7" fill="#28c840"/>
             </g>
         
-    <g transform="translate(9, 41)" clip-path="url(#terminal-1684946121-clip-terminal)">
+    <g transform="translate(9, 41)" clip-path="url(#terminal-1673018565-clip-terminal)">
     
-    <g class="terminal-1684946121-matrix">
-    <text class="terminal-1684946121-r1" x="0" y="20" textLength="268.4" clip-path="url(#terminal-1684946121-line-0)">$&#160;python&#160;numpy_demo.py</text><text class="terminal-1684946121-r2" x="610" y="20" textLength="12.2" clip-path="url(#terminal-1684946121-line-0)">
-</text><text class="terminal-1684946121-r2" x="0" y="44.4" textLength="353.8" clip-path="url(#terminal-1684946121-line-1)">for:&#160;0.054&#160;s,&#160;NumPy:&#160;0.0013&#160;s</text><text class="terminal-1684946121-r2" x="610" y="44.4" textLength="12.2" clip-path="url(#terminal-1684946121-line-1)">
+    <g class="terminal-1673018565-matrix">
+    <text class="terminal-1673018565-r1" x="0" y="20" textLength="268.4" clip-path="url(#terminal-1673018565-line-0)">$&#160;python&#160;numpy_demo.py</text><text class="terminal-1673018565-r2" x="610" y="20" textLength="12.2" clip-path="url(#terminal-1673018565-line-0)">
+</text><text class="terminal-1673018565-r2" x="0" y="44.4" textLength="353.8" clip-path="url(#terminal-1673018565-line-1)">for:&#160;0.042&#160;s,&#160;NumPy:&#160;0.0030&#160;s</text><text class="terminal-1673018565-r2" x="610" y="44.4" textLength="12.2" clip-path="url(#terminal-1673018565-line-1)">
 </text>
     </g>
     </g>
