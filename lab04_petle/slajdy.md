@@ -3,12 +3,12 @@ marp: true
 theme: warsawiq
 paginate: true
 header: "Podstawy programowania w języku Python I · Lab 04"
-footer: "dr inż. Karol Chlasta · WarsawIQ · Akademia Leona Koźmińskiego · 27.10.2026"
+footer: "dr inż. Karol Chlasta · WarsawIQ · Akademia Leona Koźmińskiego · 03.11.2026"
 ---
 
 <!-- _class: tytul -->
 
-<p class="eyebrow">Akademia Leona Koźmińskiego · Informatyka, I rok · 27.10.2026</p>
+<p class="eyebrow">Akademia Leona Koźmińskiego · Informatyka, I rok · 03.11.2026</p>
 
 # Lab 04
 ## Pętle
@@ -210,6 +210,303 @@ while n > 0:
 
 ---
 
+<!-- _class: sekcja -->
+
+# Ciekawostka
+## Biblioteki Pythona – przegląd
+
+---
+
+<style scoped>section { font-size: 22px; } h1 { font-size: 36px; } pre { font-size: 18px; }</style>
+
+# Baterie w zestawie 🔋
+
+![bg right:42% fit](img/biblioteki/00_this.svg)
+
+- **Biblioteka standardowa**: 190+ modułów bez instalacji (`math`, `csv`, `json`…) – *„batteries included”* (PEP 206)
+- **[PyPI](https://pypi.org)**: 932 072 projekty (03.11.2026), instalacja `pip install` – zrobimy to 15.12
+- Hit października 2026: **boto3** (AWS), ok. 2,7 mld pobrań; `requests` – 8. miejsce
+- Pisanki: `import this` i `import antigravity` (komiks xkcd 353)
+
+---
+
+<style scoped>section { font-size: 22px; } h1 { font-size: 36px; } pre { font-size: 18px; }</style>
+
+# Analiza danych: pandas 🐼
+
+![bg right:42% fit](img/biblioteki/01_pandas.svg)
+
+- Tabele jak w Excelu, tylko w kodzie · [pandas.pydata.org](https://pandas.pydata.org)
+- Dane przykładowe
+
+```python
+import pandas as pd
+
+df = pd.DataFrame({
+    "miasto": ["Kraków", "Gdańsk"] * 2,
+    "temp": [11.2, 10.1, 5.4, 6.0],
+})
+print(df.groupby("miasto")["temp"].mean())
+```
+
+---
+
+<style scoped>section { font-size: 22px; } h1 { font-size: 36px; } pre { font-size: 18px; }</style>
+
+# Wykresy: Matplotlib 📈
+
+![bg right:42% fit](img/biblioteki/02_matplotlib.png)
+
+- Wykres z pętli `while` – problem Collatza z poprzedniego slajdu · [matplotlib.org](https://matplotlib.org)
+
+```python
+import matplotlib.pyplot as plt
+
+n, steps = 27, [27]
+while n != 1:
+    n = n // 2 if n % 2 == 0 else 3 * n + 1
+    steps.append(n)
+
+plt.plot(steps, color="navy")
+plt.title(f"27 → 1 w {len(steps) - 1} krokach")
+plt.savefig("collatz.png", dpi=150)
+```
+
+---
+
+<style scoped>section { font-size: 22px; } h1 { font-size: 36px; } pre { font-size: 18px; }</style>
+
+# Obliczenia: NumPy ⚡
+
+![bg right:42% fit](img/biblioteki/03_numpy.svg)
+
+- Działa na całych tablicach: pętla dzieje się „za kulisami” w skompilowanym C · [numpy.org](https://numpy.org)
+- Pomiar na laptopie prowadzącego
+
+```python
+import time
+import numpy as np
+
+t = time.perf_counter()
+squares = []
+for x in range(1_000_000):
+    squares.append(x * x)
+t_for = time.perf_counter() - t
+t = time.perf_counter()
+squares_np = np.arange(1_000_000) ** 2
+t_np = time.perf_counter() - t
+print(f"for: {t_for:.3f} s, NumPy: {t_np:.4f} s")
+```
+
+---
+
+<style scoped>section { font-size: 22px; } h1 { font-size: 36px; } pre { font-size: 18px; }</style>
+
+# Internet: Requests 🌐
+
+![bg right:42% fit](img/biblioteki/04_requests.svg)
+
+- Dane z sieci w jednej linii – tu API GitHuba o naszym repo · [requests.readthedocs.io](https://requests.readthedocs.io)
+
+```python
+import requests
+
+url = ("https://api.github.com/repos/"
+       "KarolChlasta/KU-PyDev")
+repo = requests.get(url, timeout=10).json()
+print("forki:", repo["forks_count"])
+print("gwiazdki:", repo["stargazers_count"])
+print("język:", repo["language"])
+```
+
+---
+
+<style scoped>section { font-size: 22px; } h1 { font-size: 36px; } pre { font-size: 18px; }</style>
+
+# Strony WWW: Beautiful Soup 🍲
+
+![bg right:42% fit](img/biblioteki/05_bs4.svg)
+
+- Wyciąga dane z HTML – nagłówki strony python.org · [crummy.com/software/BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/)
+
+```python
+import requests
+from bs4 import BeautifulSoup
+
+url = "https://www.python.org"
+html = requests.get(url, timeout=10).text
+soup = BeautifulSoup(html, "html.parser")
+for h2 in soup.find_all("h2")[:6]:
+    print(h2.get_text(strip=True))
+```
+
+---
+
+<style scoped>section { font-size: 22px; } h1 { font-size: 36px; } pre { font-size: 18px; }</style>
+
+# Aplikacje webowe: FastAPI 🚀
+
+![bg right:42% fit](img/biblioteki/06_fastapi.svg)
+
+- BMI z Lab 01 jako usługa sieciowa; dokumentacja API sama powstaje pod `/docs` · [fastapi.tiangolo.com](https://fastapi.tiangolo.com)
+- Inne: [Django](https://www.djangoproject.com), [Flask](https://flask.palletsprojects.com)
+
+```python
+from fastapi import FastAPI
+from fastapi.testclient import TestClient
+
+app = FastAPI()
+
+@app.get("/bmi")
+def bmi(weight: float, height: float):
+    return {"bmi": round(weight / height**2, 1)}
+
+client = TestClient(app)
+resp = client.get("/bmi?weight=70&height=1.75")
+print(resp.json())
+```
+
+---
+
+<style scoped>section { font-size: 22px; } h1 { font-size: 36px; } pre { font-size: 18px; }</style>
+
+# Gry: pygame 🎮
+
+![bg right:42% fit](img/biblioteki/07_pygame.png)
+
+- Każda gra to pętla: ruch → odbicie → rysowanie · [pygame.org](https://www.pygame.org) · [GitHub](https://github.com/pygame/pygame)
+
+```python
+import pygame
+pygame.init()
+screen = pygame.display.set_mode((480, 320))
+screen.fill("navy")
+x, y, dx, dy = 40, 40, 7, 5
+for frame in range(400):
+    x, y = x + dx, y + dy
+    if not 20 <= x <= 460:
+        dx = -dx
+    if not 20 <= y <= 300:
+        dy = -dy
+    pygame.draw.circle(screen, "gold", (x, y), 5)
+pygame.image.save(screen, "frame.png")
+```
+
+---
+
+<style scoped>section { font-size: 22px; } h1 { font-size: 36px; } pre { font-size: 18px; }</style>
+
+# Terminal: Rich i tqdm 🖥️
+
+![bg right:42% fit](img/biblioteki/08_rich.svg)
+
+- Kolorowe tabele w terminalu · [rich.readthedocs.io](https://rich.readthedocs.io)
+- [tqdm](https://tqdm.github.io): pasek postępu do pętli `for i in tqdm(range(10_000)):`. Nazwa od arabskiego *taqaddum*, czyli „postęp”
+
+```python
+from rich.console import Console
+from rich.table import Table
+
+table = Table(title="Pętle w Pythonie")
+table.add_column("Pętla", style="cyan")
+table.add_column("Kiedy?")
+table.add_row("for", "znamy liczbę powtórzeń")
+table.add_row("while", "powtarzamy do warunku")
+Console().print(table)
+```
+
+---
+
+<style scoped>section { font-size: 22px; } h1 { font-size: 36px; } pre { font-size: 18px; }</style>
+
+# Obrazy: Pillow i qrcode 🖼️
+
+![bg right:42% fit](img/biblioteki/09_qr.png)
+
+- Zeskanuj – ten kod wygenerował program obok · [python-pillow.org](https://python-pillow.org), [qrcode](https://pypi.org/project/qrcode/)
+
+```python
+import qrcode
+from PIL import ImageDraw, ImageFont
+
+url = "https://github.com/KarolChlasta/KU-PyDev"
+img = qrcode.make(url).get_image().convert("RGB")
+draw = ImageDraw.Draw(img)
+font = ImageFont.load_default(size=26)
+draw.text((45, 8), "KU-PyDev - nasze repo",
+          fill="navy", font=font)
+img.save("qr.png")
+```
+
+---
+
+<style scoped>section { font-size: 22px; } h1 { font-size: 36px; } pre { font-size: 18px; }</style>
+
+# Uczenie maszynowe: scikit-learn 🤖
+
+![bg right:42% fit](img/biblioteki/10_sklearn.svg)
+
+- Rozpoznawanie gatunków irysów (zbiór Fishera z 1936 r.) · [scikit-learn.org](https://scikit-learn.org)
+- Sieci neuronowe: [PyTorch](https://pytorch.org)
+
+```python
+from sklearn.datasets import load_iris
+from sklearn.model_selection import (
+    train_test_split)
+from sklearn.neighbors import (
+    KNeighborsClassifier)
+
+X, y = load_iris(return_X_y=True)
+Xa, Xb, ya, yb = train_test_split(
+    X, y, random_state=42)
+model = KNeighborsClassifier().fit(Xa, ya)
+print("trafność:", model.score(Xb, yb))
+```
+
+---
+
+<style scoped>section { font-size: 22px; } h1 { font-size: 36px; } pre { font-size: 18px; }</style>
+
+# Testy: pytest ✅
+
+![bg right:42% fit](img/biblioteki/11_pytest.svg)
+
+- Test to zwykła funkcja z `assert` · [docs.pytest.org](https://docs.pytest.org)
+- My używamy `unittest` – porównamy na labie z TDD (19.01)
+
+```python
+# test_bmi.py
+def bmi(weight, height):
+    return round(weight / height**2, 1)
+
+def test_bmi():
+    assert bmi(70, 1.75) == 22.9
+
+def test_bmi_tall():
+    assert bmi(90, 2.0) == 22.5
+```
+
+---
+
+<style scoped>section { font-size: 22px; } h1 { font-size: 36px; } pre { font-size: 18px; }</style>
+
+# Gdzie szukać więcej? 🔎
+
+| Zastosowanie | Biblioteki |
+|---|---|
+| dane i wykresy | pandas, NumPy, Matplotlib |
+| internet i WWW | Requests, Beautiful Soup, FastAPI, Django, Flask |
+| aplikacje z danymi | [Streamlit](https://streamlit.io) |
+| Excel | [openpyxl](https://openpyxl.readthedocs.io) |
+| gry, obrazy, terminal | pygame, Pillow, Rich, tqdm |
+| AI | scikit-learn, PyTorch |
+| testy | unittest (wbudowany), pytest |
+
+- Katalog bibliotek według dziedzin: [github.com/vinta/awesome-python](https://github.com/vinta/awesome-python)
+- Wyszukiwarka pakietów: [pypi.org](https://pypi.org) · biblioteka standardowa: [docs.python.org/3/library](https://docs.python.org/3/library/)
+
+---
+
 # Dzisiejsze zadania
 
 | | Plik | Zadanie |
@@ -244,4 +541,4 @@ git push
 - M. Dawson, *Python dla każdego*, Helion 2015 – rozdz. 3–4
 - Dokumentacja: *More Control Flow Tools* (*docs.python.org/3/tutorial/controlflow.html*)
 
-**Następny lab (03.11):** listy i krotki
+**Następny lab (24.11):** listy i krotki
